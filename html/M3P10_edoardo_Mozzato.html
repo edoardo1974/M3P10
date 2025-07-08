@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="inputNome">Escolha um nome</label>
+
+        <input type="text" id="inputNome" maxlength="50" placeholder="Nome" 
+            onkeypress="if(event.key==='Enter')"></input> 
+    </div>
+
+    <div>
+        <label for="inputApelido">Escolha um apelido</label>
+
+        <input type="text" id="inputApelido" maxlength="50" placeholder="Apelido" 
+            onkeypress="if(event.key==='Enter')"></input>
+    </div>
+
+    <div>
+        <label for="inputIdade">Escolha uma idade</label>
+        <input type="number" id="inputIdade" min="0" placeholder="Idade" 
+            onkeypress="if(event.key==='Enter')"></input>
+    </div>
+
+    <button onclick="Persona()">Criar Pessoa</button>
+
+    <p id="resultado"></p>
+
+    <script src="../js/primeraclasse.js"></script>
+
+</body>
+</html>
