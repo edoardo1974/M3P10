@@ -7,29 +7,48 @@
 </head>
 <body>
     <div>
+        <!--
+            Label and input field for entering a name.
+        -->
         <label for="inputNome">Escolha um nome</label>
-
         <input type="text" id="inputNome" maxlength="50" placeholder="Nome" 
             onkeypress="if(event.key==='Enter')"></input> 
     </div>
 
     <div>
+        <!--
+            Label and input field for entering a nickname ("apelido").
+        -->
         <label for="inputApelido">Escolha um apelido</label>
-
         <input type="text" id="inputApelido" maxlength="50" placeholder="Apelido" 
             onkeypress="if(event.key==='Enter')"></input>
     </div>
 
     <div>
+        <!-- 
+            Label and input field for selecting an age.
+        -->
         <label for="inputIdade">Escolha uma idade</label>
         <input type="number" id="inputIdade" min="0" placeholder="Idade" 
             onkeypress="if(event.key==='Enter')"></input>
     </div>
 
+    <!-- 
+        Button to trigger the creation of a new person.
+        When clicked, it calls the JavaScript function 'Persona()'.
+    -->
     <button onclick="Persona()">Criar Pessoa</button>
 
+    <!-- 
+        Button to trigger the 'mostrarPessoas' JavaScript function.
+        When clicked, it will display information about a person or people.
+        Ensure that the 'mostrarPessoas' function is defined in your script.
+    -->
     <button onclick="mostrarPessoas()">Mostrar Pessoa</button>
 
+    <!-- 
+        This paragraph element (<p>) is used to display the result of an operation or calculation.
+    -->
     <p id="resultado"></p>
 
     <script src="../js/primeraclasse.js"></script>
